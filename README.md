@@ -23,3 +23,12 @@ The following datasets are provided for experimentation:\
   For Dataset 1 and Dataset 2(a), **70% of data is used for training and 30% for testing.**\
   For Dataset 2(b) and Dataset 2(c), **predefined training and test splits are provided.**
 
+**3. Image Segmentation using Clustering**\
+For **cervical cell image segmentatio**n, clustering is used to segment different regions of the images:\
+•  **K-means Clustering**\
+•  Clusters local feature vectors extracted from cell images.\
+•  Uses **Euclidean distance** as a similarity measure.\
+•  Modified K-means (**Mahalanobis Distance**)\
+•  Uses **Mahalanobis distance** instead of Euclidean distance for better cluster separation.\
+•  Accounts for variance and covariance of the features.\
+Both clustering methods are initialized with the same initial centers.
