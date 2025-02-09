@@ -43,7 +43,7 @@ Two types of feature vectors are extracted:
 • The final **24-dimensional feature vector** is obtained by concatenating histograms from the three color channels.\
 • Each image is represented as a set of 24D feature vectors.\
 • **Bag-of-Visual-Words (BoVW)** Representation (32-Dimensional Vector)\
-
+![Screenshot from 2024-10-14 22-13-58](https://github.com/user-attachments/assets/50bf9004-27e9-4bd1-9241-9f8af2919d69)
 • K-means clustering is applied to all **24D color histogram** feature vectors across training images.\
 • Clusters are grouped into 32 visual words.\
 • Each image is represented as a **32-dimensional histogram** showing how many local features belong to each cluster.\
@@ -58,3 +58,22 @@ Two types of feature vectors are extracted:
 **5. Implementation Details :**\
 • All algorithms are **implemented from scratch** without using built-in libraries for Bayesian classifiers, GMM, K-means clustering, or Mahalanobis distance.\
 • The experiments compare different numbers of GMM components and clustering algorithms.
+
+**6. Results and Evaluation :**\
+The results are analyzed using the following evaluation metrics:\
+
+➡Classification Performance Metrics\
+➡Confusion Matrix\
+➡Classification Accuracy\
+➡Precision, Recall, F1-score (for each class and overall)\
+➡Mean Precision, Mean Recall, Mean F1-score\
+➡Visualization Plots\
+➡Constant density contour plots superimposed on training data.\
+➡Decision region plots to show classification boundaries.\
+➡Comparison of decision surfaces for different covariance assumptions.\
+➡Segmentation Evaluation\
+➡Cluster plots on training data.\
+➡Segmentation results projected onto test images.\
+➡Convergence Analysis\
+➡Log-likelihood vs. Iterations graph for different numbers of GMM components.\
+![K16](https://github.com/user-attachments/assets/7c0954ca-3fa7-4da7-b533-0953492c37c1)
