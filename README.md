@@ -49,8 +49,12 @@ Two types of feature vectors are extracted:
 • Each image is represented as a **32-dimensional histogram** showing how many local features belong to each cluster.\
 • The final feature vector is normalized.\
 
-**4.2 Feature Extraction for Cervical Cytology Dataset (Dataset 2c)**
-• **7×7 overlapping patches** are extracted from cell images.
-• **Mean and standard deviation** of pixel intensities are computed for each patch.
-• Each patch is represented as a **2D feature vector**.
+**4.2 Feature Extraction for Cervical Cytology Dataset (Dataset 2c)**\
+• **7×7 overlapping patches** are extracted from cell images.\
+• **Mean and standard deviation** of pixel intensities are computed for each patch.\
+• Each patch is represented as a **2D feature vector**.\
 • The entire image is stored as a **set of 2D feature vectors**.
+
+**5. Implementation Details :**\
+• All algorithms are implemented from scratch without using built-in libraries for Bayesian classifiers, GMM, K-means clustering, or Mahalanobis distance.\
+• The experiments compare different numbers of GMM components and clustering algorithms.\
