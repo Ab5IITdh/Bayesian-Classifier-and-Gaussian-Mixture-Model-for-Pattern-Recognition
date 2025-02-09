@@ -56,5 +56,5 @@ Two types of feature vectors are extracted:
 • The entire image is stored as a **set of 2D feature vectors**.
 
 **5. Implementation Details :**\
-• All algorithms are implemented from scratch without using built-in libraries for Bayesian classifiers, GMM, K-means clustering, or Mahalanobis distance.\
-• The experiments compare different numbers of GMM components and clustering algorithms.\
+• All algorithms are **implemented from scratch** without using built-in libraries for Bayesian classifiers, GMM, K-means clustering, or Mahalanobis distance.\
+• The experiments compare different numbers of GMM components and clustering algorithms.
