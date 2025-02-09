@@ -31,6 +31,8 @@ For **cervical cell image segmentatio**n, clustering is used to segment differen
 •  Modified K-means (**Mahalanobis Distance**)\
 •  Uses **Mahalanobis distance** instead of Euclidean distance for better cluster separation.\
 •  Accounts for variance and covariance of the features.\
+![image](https://github.com/user-attachments/assets/af3eb02b-e376-4774-8555-4f339dd3a17b)\
+
 Both clustering methods are initialized with the same initial centers.
 
 ◘**4. Feature Extraction :**\ 
