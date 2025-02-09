@@ -32,3 +32,25 @@ For **cervical cell image segmentatio**n, clustering is used to segment differen
 •  Uses **Mahalanobis distance** instead of Euclidean distance for better cluster separation.\
 •  Accounts for variance and covariance of the features.\
 Both clustering methods are initialized with the same initial centers.
+
+**4. Feature Extraction :**\ 
+Feature extraction techniques vary based on dataset type.\
+**4.1 Feature Extraction for Scene Image Dataset** (Dataset 2b)\
+Two types of feature vectors are extracted:
+• **Color Histogram Feature Extraction** (24-Dimensional Vector)\
+• Image is divided into 32×32 non-overlapping patches.\
+• An **8-bin histogram** is computed for each color channel (Red, Green, Blue).\
+• The final **24-dimensional feature vector** is obtained by concatenating histograms from the three color channels.\
+• Each image is represented as a set of 24D feature vectors.\
+• **Bag-of-Visual-Words (BoVW)** Representation (32-Dimensional Vector)\
+
+• K-means clustering is applied to all **24D color histogram** feature vectors across training images.\
+• Clusters are grouped into 32 visual words.\
+• Each image is represented as a **32-dimensional histogram** showing how many local features belong to each cluster.\
+• The final feature vector is normalized.\
+
+**4.2 Feature Extraction for Cervical Cytology Dataset (Dataset 2c)**
+• **7×7 overlapping patches** are extracted from cell images.
+• **Mean and standard deviation** of pixel intensities are computed for each patch.
+• Each patch is represented as a **2D feature vector**.
+• The entire image is stored as a **set of 2D feature vectors**.
