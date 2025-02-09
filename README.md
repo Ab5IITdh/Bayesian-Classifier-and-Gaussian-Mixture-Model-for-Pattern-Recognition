@@ -1,6 +1,7 @@
 # Bayesian-Classifier-and-Gaussian-Mixture-Model-for-Pattern-Recognition
 This project involves the implementation of **Bayesian Classifiers** and **Gaussian Mixture Models (GMM)** for statistical pattern recognition.
 
+---
 ◘**1. Problem Statement :**
 This project involves the implementation of **Bayesian Classifiers** and **Gaussian Mixture Models** (GMM) for statistical pattern recognition. The primary objective is to classify datasets with varying degrees of **linearity and nonlinearity**, using different covariance assumptions. The datasets are provided with predefined class labels, and the task is to apply probabilistic models for classification and image segmentation.
 
@@ -9,6 +10,7 @@ This project involves the implementation of **Bayesian Classifiers** and **Gauss
   **Image Segmentation Task:** Clustering-based segmentation using **K-means** and **Modified K-means**.\
 This project must be implemented from scratch in Python or MATLAB without using existing libraries for GMM, Bayesian classifiers, multivariate Gaussian distributions, likelihood calculations, or K-means clustering.
 
+---
 ◘**2. Datasets :** 
 The following datasets are provided for experimentation:\
   **Dataset 1: Nonlinearly Separable Classes**\
@@ -23,6 +25,7 @@ The following datasets are provided for experimentation:\
   For Dataset 1 and Dataset 2(a), **70% of data is used for training and 30% for testing.**\
   For Dataset 2(b) and Dataset 2(c), **predefined training and test splits are provided.**
 
+---
 ◘**3. Image Segmentation using Clustering**\
 For **cervical cell image segmentatio**n, clustering is used to segment different regions of the images:\
 •  **K-means Clustering**\
@@ -35,6 +38,7 @@ For **cervical cell image segmentatio**n, clustering is used to segment differen
 
 Both clustering methods are initialized with the same initial centers.
 
+---
 ◘**4. Feature Extraction :**\ 
 Feature extraction techniques vary based on dataset type.\
 **4.1 Feature Extraction for Scene Image Dataset** (Dataset 2b)\
@@ -57,10 +61,12 @@ Two types of feature vectors are extracted:
 • Each patch is represented as a **2D feature vector**.\
 • The entire image is stored as a **set of 2D feature vectors**.
 
+---
 ◘**5. Implementation Details :**\
 • All algorithms are **implemented from scratch** without using built-in libraries for Bayesian classifiers, GMM, K-means clustering, or Mahalanobis distance.\
 • The experiments compare different numbers of GMM components and clustering algorithms.
 
+---
 ◘**6. Results and Evaluation :**\
 The results are analyzed using the following evaluation metrics:\
 
@@ -80,6 +86,7 @@ The results are analyzed using the following evaluation metrics:\
 ➡Log-likelihood vs. Iterations graph for different numbers of GMM components.\
 ![K16](https://github.com/user-attachments/assets/7c0954ca-3fa7-4da7-b533-0953492c37c1)
 
+---
 ◘**7. Conclusion**\
 This project provides an in-depth exploration of Bayesian classification and image segmentation using Gaussian Mixture Models. The impact of covariance matrix assumptions is analyzed in classification tasks, while clustering techniques are evaluated for medical image segmentation.
 The results contribute to understanding decision boundaries, probabilistic modeling, and feature-based image segmentation in pattern recognition.
